@@ -97,8 +97,8 @@ function aos(el, effect = 'fade', duration = 300, once = true, easing = 'ease-ou
 }
 
 // ── auto-init ────────────────────────────────────────────────────────────────
-document.querySelectorAll('[data-aos]').forEach(el => {
-  const data = el.getAttribute('data-aos');
+document.querySelectorAll('[aos]').forEach(el => {
+  const data = el.getAttribute('aos');
   if (!data) return;
   const parts    = data.split(';');
   const duration = parseInt(parts[2]) || 300;
