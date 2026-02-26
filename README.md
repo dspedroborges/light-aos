@@ -1,6 +1,6 @@
 # @light-aos.js
 
-This is literally just animate on scroll. All you gotta do is add `aos` to your elements. That's it.
+This is literally just animate on scroll. All you gotta do is add `aos` to your elements and choose your animation. That's it.
 
 ## Installation
 
@@ -38,7 +38,7 @@ Not applicable - this is a pure UI library.
 <div aos="flip">Flip in</div>
 ```
 
-### Scroll-Based Effects
+### Simple scroll effects
 
 ```html
 <div aos="hide-scroll-down">Visible when scrolling up, hidden when scrolling down</div>
@@ -100,27 +100,6 @@ By default, animations play every time you scroll. To play only once:
 
 ```html
 <div aos="fade;top;300;once">Animates only once</div>
-```
-
-## Data Attribute Format
-
-```
-aos="effect;direction=distance;duration;easing;once"
-
-aos="hide-scroll-down"
-aos="show-scroll-down"
-```
-
-Only `effect` is required.
-
-## Styling
-
-The library handles all styling automatically via a wrapper element. To override, add your own CSS:
-
-```css
-.aos-wrapper {
-  /* your styles */
-}
 ```
 
 ## Browser Support
